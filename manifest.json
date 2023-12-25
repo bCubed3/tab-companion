@@ -1,0 +1,10 @@
+{
+  "name": "Tabmagotchi",
+  "description": "Base Level Extension",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "tab-companion.html",
+    "default_icon": "tab-companion.png"
+  }
+}
