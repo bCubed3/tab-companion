@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            font-family: courier;
+            text-align: center;
+        }
+        .center {
+            position: absolute;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translateY(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <script src="background.js"></script>
+        <title>New Tab</title>
+        <link rel="icon" type="image/x-icon" href="tab-companion.png">
+    </head>
+    <body>
+        <div class="center">
+            <h1>Tabagotchi Revived</h1>
+            <h2>you have <span id="numTabs"></span> tabs open. <span id="numTabsMsg"></span></h2>
+            <img id="sprite" src="tab-companion-64x.png" alt="Tab companion mascot">
+        </div>
+    </body>
+</html>

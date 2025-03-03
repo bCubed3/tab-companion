@@ -1,10 +1,19 @@
 {
-  "name": "Tabmagotchi",
-  "description": "Base Level Extension",
-  "version": "0.1",
-  "manifest_version": 3,
-  "action": {
-    "default_popup": "tab-companion.html",
-    "default_icon": "tab-companion.png"
-  }
+    "name": "Tabmagotchi",
+    "description": "Base Level Extension",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "tab-companion.html",
+        "default_icon": "tab-companion.png"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "chrome_url_overrides": {
+        "newtab": "tc-home.html"
+    }
 }
